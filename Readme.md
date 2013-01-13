@@ -2,6 +2,8 @@
 
 A Play2 module to provide the Twitter Bootstrap assets.
 
+Note that module runs against Play 2.1-RC1.
+
 ## What exactly does this module do?
 
 * Provides `*.css` and `*.min.css` files within the `public\stylesheets` sub-directory of the classpath.
