@@ -5,14 +5,14 @@ import play.Project._
 object ApplicationBuild extends Build {
 
     val appName         = "play2-bootstrap-sample-java"
-    val appVersion      = "2.2.2-SNAPSHOT"
+    val appVersion      = "2.2.2"
 
     val appDependencies = Seq(
       
    	  javaCore, javaJdbc, javaEbean,
 
       // We want to depend on the thing that we're demoing.
-      "com.aidanns" %% "play2-bootstrap" % "2.2.2-SNAPSHOT"
+      "com.aidanns" %% "play2-bootstrap" % "2.2.2"
     
     )
 
