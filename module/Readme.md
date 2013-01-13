@@ -1,0 +1,1 @@
+This directory contains the play2 module project for the play2-bootstrap module.

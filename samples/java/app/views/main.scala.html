@@ -1,0 +1,20 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <title>@title</title>
+
+    @* Use the minified version in production, and the regular version for development *@
+    @minified = @{ if (play.Play.isProd()) ".min" else "" }
+
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap" + minified + ".css")">
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main" + minified + ".css")">
+
+  </head>
+  <body>
+    @content
+  </body>
+</html>
