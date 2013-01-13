@@ -32,5 +32,5 @@ This requires a working Python installation.
 3. `cd ../../`
 4. `script/update.py`
 5. `git add .`
-6. `git commit -m "Updated to bootstrap version x.x.x"
+6. `git commit -m "Updated to bootstrap version x.x.x"`
 7. Submit a pull request on Github.
