@@ -14,9 +14,13 @@ Assuming you maintain the default `GET  /assets/*file controllers.Assets.at(path
 
 ## How do I use it?
 
-There is currently no publicly accessibly maven repo hosting the `.jar`. The easiest way to use the project is to clone the repo and build the `.jar` from within the `module` directoy. Copy the `.jar` in to the `lib` directory of your play application and you're good to go.
+Add the following to the appDependencies section of your Build.sbt file:
 
-You can also publish the `.jar` locally and set up a dependency using SBT. See the `Build.scala` file within the sample project for an example.
+`"com.aidanns" %% "play2-bootstrap" % "2.2.2"`
+
+Add the following to the main section of your Build.sbt file:
+
+`resolvers += Resolver.url("com.aidanns Github Repo", url("https://raw.github.com/aidanns/play2-modules/master/releases"))(Resolver.ivyStylePatterns)`
 
 ## What does the repo contain?
 

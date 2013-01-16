@@ -20,6 +20,7 @@ object ApplicationBuild extends Build {
     
       // Search the local play repo for dependencies.
       resolvers += "Local Play Repository" at "file://usr/local/share/play-2.1-RC1/repository/",
+      resolvers += Resolver.url("com.aidanns Github Repo", url("https://raw.github.com/aidanns/play2-modules/master/releases"))(Resolver.ivyStylePatterns),
     
       // Org name to use for publishing
       organization := "com.aidanns"
