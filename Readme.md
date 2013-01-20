@@ -6,9 +6,9 @@ Note that module runs against Play 2.1-RC1.
 
 ## What exactly does this module do?
 
-* Provides `*.css` and `*.min.css` files within the `public\stylesheets` sub-directory of the classpath.
-* Provides `*.js` and `*.min.js` files within the `public\javascripts` sub-directory of the classpath.
-* Provides `*.png` files within the `public\images` sub-directory of the classpath.
+* Provides `*.css` and `*.min.css` files within the `public/stylesheets` sub-directory of the classpath.
+* Provides `*.js` and `*.min.js` files within the `public/javascripts` sub-directory of the classpath.
+* Provides `*.png` files within the `public/images` sub-directory of the classpath.
 
 Assuming you maintain the default `GET  /assets/*file controllers.Assets.at(path="/public", file)` route from the skeleton, this means all the bootstrap files will be available at `/assets/*`.
 
@@ -31,7 +31,7 @@ Add the following to the main section of your Build.sbt file:
 
 This requires a working Python installation.
 
-1. `cd module\lib\bootstrap`
+1. `cd module/lib/bootstrap`
 2. `git pull`
 3. `cd ../../`
 4. `script/update.py`
